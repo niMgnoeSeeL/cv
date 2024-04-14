@@ -22,13 +22,28 @@
 	booktitle = {},
 	year = {}}
 
-@inproceedings{Liyanage:2024aa,
-	author = {Liyanage, *Danushka and Lee, *Seongmin and Tantithamthavorn, Chakkrit and B{\"o}hme, Marcel},
-	booktitle = {Proceedings of the 2024 International Conference on Software Engineering},
-	date-added = {2023-12-24 09:08:41 +0900},
-	date-modified = {2023-12-24 09:08:41 +0900},
+
+@inproceedings{Liyanage:2024ab,
+	abstract = {A fuzzer can literally run forever. However, as more resources are spent, the coverage rate continuously drops, and the utility of the fuzzer declines. To tackle this coverage-resource tradeoff, we could introduce a policy to stop a campaign whenever the coverage rate drops below a certain threshold value, say 10 new branches covered per 15 minutes. During the campaign, can we predict the coverage rate at some point in the future? If so, how well can we predict the future coverage rate as the prediction horizon or the current campaign length increases? How can we tackle the statistical challenge of adaptive bias, which is inherent in greybox fuzzing (i.e., samples are not independent and identically distributed)?In this paper, we i) evaluate existing statistical techniques to predict the coverage rate U(t0 + k) at any time t0 in the campaign after a period of k units of time in the future and ii) develop a new extrapolation methodology that tackles the adaptive bias. We propose to efficiently simulate a large number of blackbox campaigns from the collected coverage data, estimate the coverage rate for each of these blackbox campaigns and conduct a simple regression to extrapolate the coverage rate for the greybox campaign.Our empirical evaluation using the Fuzztastic fuzzer benchmark demonstrates that our extrapolation methodology exhibits at least one order of magnitude lower error compared to the existing benchmark for 4 out of 5 experimental subjects we investigated. Notably, compared to the existing extrapolation methodology, our extrapolator excels in making long-term predictions, such as those extending up to three times the length of the current campaign.},
+	address = {New York, NY, USA},
+	articleno = {132},
+	author = {Liyanage, Danushka and Lee, Seongmin and Tantithamthavorn, Chakkrit and B\"{o}hme, Marcel},
+	booktitle = {Proceedings of the IEEE/ACM 46th International Conference on Software Engineering},
+	date-added = {2024-04-14 22:52:47 +0100},
+	date-modified = {2024-04-14 22:52:48 +0100},
+	doi = {10.1145/3597503.3639198},
+	isbn = {9798400702174},
+	keywords = {greybox fuzzing, extrapolation, coverage rate, adaptive bias, statistical method},
+	location = {<conf-loc>, <city>Lisbon</city>, <country>Portugal</country>, </conf-loc>},
+	numpages = {12},
+	publisher = {Association for Computing Machinery},
+	series = {ICSE '24},
 	title = {Extrapolating Coverage Rate in Greybox Fuzzing},
-	year = {2024}}
+	url = {https://doi.org/10.1145/3597503.3639198},
+	year = {2024},
+	bdsk-url-1 = {https://doi.org/10.1145/3597503.3639198}
+}
+
 
 @inproceedings{Lee:2023aa,
 	abstract = {Given a target program state (or statement) s, what is the probability that an input reaches s? This is the quantitative reachability analysis problem. For instance, quantitative reachability analysis can be used to approximate the reliability of a program (where s is a bad state). Traditionally, quantitative reachability analysis is solved as a model counting problem for a formal constraint that represents the (approximate) reachability of s along paths in the program, i.e., probabilistic reachability analysis. However, in preliminary experiments, we failed to run state-of-the-art probabilistic reachability analysis on reasonably large programs. In this paper, we explore statistical methods to estimate reachability probability. An advantage of statistical reasoning is that the size and composition of the program are insubstantial as long as the program can be executed. We are particularly interested in the error compared to the state-of-the-art probabilistic reachability analysis. We realize that existing estimators do not exploit the inherent structure of the program and develop structure-aware estimators to further reduce the estimation error given the same number of samples. Our empirical evaluation on previous and new benchmark programs shows that (i) our statistical reachability analysis outperforms state-of-the-art probabilistic reachability analysis tools in terms of accuracy, efficiency, and scalability, and (ii) our structure-aware estimators further outperform (blackbox) estimators that do not exploit the inherent program structure. We also identify multiple program properties that limit the applicability of the existing probabilistic analysis techniques.},
