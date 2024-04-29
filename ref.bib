@@ -6,6 +6,13 @@
 
 %% Saved with string encoding Unicode (UTF-8) 
 
+@misc{lee2024discover,
+      title={Predicting the Number of New Discoveries}, 
+      author={Seongmin Lee and Marcel Böhme},
+	  booktitle = {},
+      year={2024}
+}
+
 @misc{lee2024unseen,
       title={How Much is Unseen Depends Chiefly on Information About the Seen}, 
       author={Seongmin Lee and Marcel Böhme},
@@ -27,7 +34,7 @@
 	abstract = {A fuzzer can literally run forever. However, as more resources are spent, the coverage rate continuously drops, and the utility of the fuzzer declines. To tackle this coverage-resource tradeoff, we could introduce a policy to stop a campaign whenever the coverage rate drops below a certain threshold value, say 10 new branches covered per 15 minutes. During the campaign, can we predict the coverage rate at some point in the future? If so, how well can we predict the future coverage rate as the prediction horizon or the current campaign length increases? How can we tackle the statistical challenge of adaptive bias, which is inherent in greybox fuzzing (i.e., samples are not independent and identically distributed)?In this paper, we i) evaluate existing statistical techniques to predict the coverage rate U(t0 + k) at any time t0 in the campaign after a period of k units of time in the future and ii) develop a new extrapolation methodology that tackles the adaptive bias. We propose to efficiently simulate a large number of blackbox campaigns from the collected coverage data, estimate the coverage rate for each of these blackbox campaigns and conduct a simple regression to extrapolate the coverage rate for the greybox campaign.Our empirical evaluation using the Fuzztastic fuzzer benchmark demonstrates that our extrapolation methodology exhibits at least one order of magnitude lower error compared to the existing benchmark for 4 out of 5 experimental subjects we investigated. Notably, compared to the existing extrapolation methodology, our extrapolator excels in making long-term predictions, such as those extending up to three times the length of the current campaign.},
 	address = {New York, NY, USA},
 	articleno = {132},
-	author = {Liyanage, Danushka and Lee, Seongmin and Tantithamthavorn, Chakkrit and B\"{o}hme, Marcel},
+	author = {Liyanage, *Danushka and Lee, *Seongmin and Tantithamthavorn, Chakkrit and B\"{o}hme, Marcel},
 	booktitle = {Proceedings of the IEEE/ACM 46th International Conference on Software Engineering},
 	date-added = {2024-04-14 22:52:47 +0100},
 	date-modified = {2024-04-14 22:52:48 +0100},
@@ -118,11 +125,9 @@
 	date-added = {2021-05-16 19:17:28 +0900},
 	date-modified = {2021-05-16 19:17:29 +0900},
 	eprint = {2104.09107},
-	journal = {CoRR in arXiv},
 	timestamp = {Mon, 26 Apr 2021 17:25:10 +0200},
 	title = {Causal Program Dependence Analysis},
 	url = {https://arxiv.org/abs/2104.09107},
-	volume = {abs/2104.09107},
 	year = {2021},
 	bdsk-url-1 = {https://arxiv.org/abs/2104.09107}}
 
