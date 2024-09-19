@@ -14,7 +14,6 @@
 \usepackage{fontawesome5}
 \usepackage{multicol}
 \usepackage[official]{eurosym}
-% \usepackage{showframe}
 
 \usepackage{bibentry}
 \makeatletter\let\saved@bibitem\@bibitem\makeatother
@@ -26,28 +25,14 @@
 \input{glyphtounicode}
 
 
-%----------FONT OPTIONS----------
-% sans-serif
-% \usepackage[sfdefault]{FiraSans}
-% \usepackage[sfdefault]{roboto}
-% \usepackage[sfdefault]{noto-sans}
-% \usepackage[default]{sourcesanspro}
-
-% serif
-% \usepackage{CormorantGaramond}
-% \usepackage{charter}
-
-
 \pagestyle{fancy}
-\fancyhf{} % clear all header and footer fields
+\fancyhf{}
 \fancyfoot{}
 \fancyfootoffset[R]{0in}
-% \fancyfoot[R]{\thepage/\pageref{LastPage}}
 \rfoot{\thepage/\pageref{LastPage}}
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
 
-% Adjust margins
 \addtolength{\oddsidemargin}{-0.6in}
 \addtolength{\evensidemargin}{-0.5in}
 \addtolength{\textwidth}{1.19in}
@@ -60,16 +45,12 @@
 \raggedright
 \setlength{\tabcolsep}{0in}
 
-% Sections formatting
 \titleformat{\section}{
   \vspace{-4pt}\scshape\raggedright\large\bfseries
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
-% Ensure that generate pdf is machine readable/ATS parsable
 \pdfgentounicode=1
 
-%-------------------------
-% Custom commands
 \newcommand{\resumeItem}[1]{
   \item\small{
     {#1 \vspace{-2pt}}
@@ -123,15 +104,9 @@
 \begin{document}
 
 \bibliographystyle{unsrt}
-\nobibliography{ref}
+\nobibliography{mypublications}
 
-%----------HEADING----------
-% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
-%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
-% \end{tabular*}
 
-% \begin{center}
 {\Huge \scshape Seongmin Lee} \\ \vspace{10pt}
 Max Planck Institute for Security and Privacy (MPI-SP) \\
 Universitätsstraße 140 \\
@@ -139,21 +114,14 @@ Universitätsstraße 140 \\
 Germany \\ \vspace{5pt}
 \small \raisebox{-0.1\height}\faPhone\ +49 177 783 5480  ~ \href{mailto:seongmin.lee@mpi-sp.org}{\raisebox{-0.2\height}\faEnvelope\  \underline{seongmin.lee@mpi-sp.org}} ~
 \href{https://scholar.google.com/citations?user=-YSnc6kAAAAJ&hl=en}{\raisebox{-0.2\height}\faUniversity\ \underline{Google Scholar}}  ~
-% \href{https://github.com/}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/username}}
-% \vspace{-8pt}
-% \end{center}
 
 \section{Research Interests}
 
 My research interest lies in software testing and program analysis. The overarching objective of my research is \textbf{achieving practical software testing in real-world scenarios} by addressing the challenges associated with the scale and complexity of software systems, overcoming the limitations of formal methods, and taking account of the operational behavior of software systems. I \textbf{utilize statistical methods to analyze dynamic information from program execution}, facilitating the reasoning of a program's semantic properties and addressing empirical challenges in software testing.
 
 
-%-----------EDUCATION-----------
 \section{Education and Employment}
 \resumeSubHeadingListStart
-% \resumeSubheading
-%   {Korea Advanced Institue of Science and Technology (KAIST)}{Sep. 2017 -- May 2021}
-%   {Bachelor of Science in Computer Science}{City, State}
 \vspace{-2pt}
 \item Max Planck Institute for Security and Privacy \hfill Germany \vspace{-2pt}
 \vspace{-2pt} \item \hspace{10pt} \textbf{Postdoctoral Researcher, Software Security Research group} \hfill  Sep. 2022 -- Present
@@ -163,79 +131,72 @@ My research interest lies in software testing and program analysis. The overarch
 \item Korea Advanced Institute of Science and Technology \hfill Republic of Korea \vspace{-2pt}
 \vspace{-2pt} \item \hspace{10pt} \textbf{Doctor of Philosophy, School of Computing} \hfill  Sep. 2016 -- Aug. 2022
 \vspace{-5pt} \item \hspace{20pt} Advisor: Dr. Shin Yoo
-% \vspace{-5pt} \item \hspace{20pt} GPA - 4.02/4.3
 
 \vspace{-2pt} \item \hspace{10pt} \textbf{Bachelor of Science, School of Computing} \hfill  Feb. 2012 -- Aug. 2016
 \vspace{-5pt} \item \hspace{10pt} \textbf{Bachelor of Science, Department of Mathematical Sciences}
-% \vspace{-5pt} \item \hspace{20pt} GPA - 3.48/4.3
 \resumeSubHeadingListEnd
 
 \section{Publications}
 
 \textbf{Preprints}\vspace{-4pt}
 \begin{itemize}
-  \item \bibentry{lee2024unseen} -- \emph{Under review}
-  \item \bibentry{Lee:2021ul} -- \emph{Under review}
+  \item \bibentry{leeHowMuchUnseen2024}
 \end{itemize}
 
 
 \textbf{Peer-Reviewed Conference and Workshop Papers}\vspace{-4pt}
 
 \begin{itemize}
-  \item \bibentry{lee2024chomi}
-  \item \bibentry{Liyanage:2024ab} \\ (*\emph{Co-first authors with equal contribution})
-  \item \bibentry{Lee:2023aa}
-  \item \bibentry{Oh:2021wj}
-  \item \bibentry{Lee:2020aa}
-  \item \bibentry{Lee:2019ab}
-  \item \bibentry{Lee:2019aa}
-  \item \bibentry{Lee:2017aa}
-  \item \bibentry{An:2017ui}
-  \item \bibentry{Sohn:2016aa}
+  \item \bibentry{leeChaomi2024}
+  \item \bibentry{liyanageExtrapolatingCoverageRate2024} \\ (*\emph{Co-first authors with equal contribution})
+  \item \bibentry{leeStatisticalReachabilityAnalysis2023}
+  \item \bibentry{ohEffectivelySamplingHigher2021}
+  \item \bibentry{leeScalableApproximateProgram2020}
+  \item \bibentry{leeClassifyingFalsePositive2019a}
+  \item \bibentry{leeMOADModelingObservationBased2019a}
+  \item \bibentry{leeHyperheuristicObservationBased2017}
+  \item \bibentry{anPYGGIPythonGeneral2017}
+  \item \bibentry{sohnAmortisedDeepParameter2016}
 \end{itemize}
 
 \textbf{Peer-Reviewed Journal Articles}\vspace{-4pt}
 
 \begin{itemize}
-  \item \bibentry{Lee:2021ua}
-  \item \bibentry{Lee:2020ab}
+  \item \bibentry{leeCausalProgramDependence2025}
+  \item \bibentry{leeObservationbasedApproximateDependency2021}
+  \item \bibentry{leeEvaluatingLexicalApproximation2020}
 \end{itemize}
 
 \textbf{Posters \& Technical Reports}\vspace{-4pt}
 \begin{itemize}
-  \item \bibentry{Lee:2021aa}
-  \item \bibentry{Lee:2018aa}
-  \item \bibentry{Lee:2017tn}
+  \item \bibentry{leeCausalProgramDependence2021}
+  \item \bibentry{leeMOBSMultiOperatorObservationBased2018}
+  \item \bibentry{leeHyperheuristicObservationBased2017}
 \end{itemize}
 
 \textbf{Software Engineering Notes}\vspace{-4pt}
 \begin{itemize}
-  \item \bibentry{Langdon:2020vk}
+  \item \bibentry{langdonGeneticImprovementICSE2020}
 \end{itemize}
 
 \section{Academic Services}
 \begin{itemize}
-  
+
   \item Program committee: (Main Track) ASE'24, ISSTA'24, FUZZING'24, SCAM'24, ASE'23 / (Artifact Evaluation Track) ISSTA'24, ECOOP'24, USENIX Security'24, ICSE'24, ISSTA'23, ICSME'22, ICSME'21 / (Student Research Competition Track) FSE'24 / (Tool Demonstration Track) ASE'24
   \item Reviewer: TOSEM'24, TSE'24, IST'24, ASE'24, TOSEM'22, JSS'21, JSS'20  / (External) ICSE'24, FSE'24, ECOOP'24, ICSE'23, ISSTA'23
 \end{itemize}
 
 \section{Grants and Fellowships}
 \begin{itemize}
-  \item Title: \emph{Statistical Security Analysis for Large, Evolving Software} \\ 
-  Funding Agency: CASA - Cyber Security in the Age of Large-Scale Adversaries \\ 
-  Grant ID: DFG under Germany's Excellence Strategy - \textbf{EXC 2092 CASA - 390781972} \\ 
-  Amount: Salary according to the remuneration group E 14 TV-L (full time, $\sim$ \euro{136,000}) \\
-  Duration: 2024.01.01 -- 2025.12.31
+  \item Title: \emph{Statistical Security Analysis for Large, Evolving Software} \\
+        Funding Agency: CASA - Cyber Security in the Age of Large-Scale Adversaries \\
+        Grant ID: DFG under Germany's Excellence Strategy - \textbf{EXC 2092 CASA - 390781972} \\
+        Amount: Salary according to the remuneration group E 14 TV-L (full time, $\sim$ \euro{136,000}) \\
+        Duration: 2024.01.01 -- 2025.12.31
 \end{itemize}
 
 \section{Invited Talks}
 \begin{itemize}
-  \item \emph{On the Surprising Efficiency, Scalability, and Predictability of Greybox Fuzzing} \\
-  Fuzzing and Software Security Summer School @ National University of Singapore, 2024
-  \begin{itemize}[label={-}, leftmargin=0.5cm, topsep=0pt, itemsep=0pt]
-    \item \emph{Responsible for a part of Dr. Marcel Böhme's lecture and live coding session on the predictability of fuzzing.}
-  \end{itemize}
   \item \emph{Statistical Program Analysis} \\ Korea Advanced Institute of Science and Technology (KAIST), 2024
   \item \emph{Statistical Program Analysis} \\ Ulsan National Institute of Science and Technology (UNIST), 2024
   \item \emph{Causal Program Dependence Analysis} \\ Sheffield Causality and Testing Workshop, 2023
@@ -257,7 +218,6 @@ My research interest lies in software testing and program analysis. The overarch
 \end{itemize}
 
 
-%-----------EXPERIENCE-----------
 \section{Research Experience}
 \resumeSubHeadingListStart
 
@@ -299,10 +259,6 @@ My research interest lies in software testing and program analysis. The overarch
 \resumeItemListEnd
 
 \resumeSubHeadingListEnd
-% \vspace{-16pt}
-
-
-
 
 \section{Teaching Experience}
 \begin{itemize}

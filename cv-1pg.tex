@@ -1,4 +1,4 @@
-\documentclass[letterpaper,10pt]{article}
+\documentclass[letterpaper,11pt]{article}
 
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
@@ -14,7 +14,6 @@
 \usepackage{fontawesome5}
 \usepackage{multicol}
 \usepackage[official]{eurosym}
-% \usepackage{showframe}
 
 \usepackage{bibentry}
 \makeatletter\let\saved@bibitem\@bibitem\makeatother
@@ -26,28 +25,14 @@
 \input{glyphtounicode}
 
 
-%----------FONT OPTIONS----------
-% sans-serif
-% \usepackage[sfdefault]{FiraSans}
-% \usepackage[sfdefault]{roboto}
-% \usepackage[sfdefault]{noto-sans}
-% \usepackage[default]{sourcesanspro}
-
-% serif
-% \usepackage{CormorantGaramond}
-% \usepackage{charter}
-
-
-% \pagestyle{fancy}
-\fancyhf{} % clear all header and footer fields
+\pagestyle{fancy}
+\fancyhf{}
 \fancyfoot{}
 \fancyfootoffset[R]{0in}
-% \fancyfoot[R]{\thepage/\pageref{LastPage}}
 \rfoot{\thepage/\pageref{LastPage}}
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
 
-% Adjust margins
 \addtolength{\oddsidemargin}{-0.6in}
 \addtolength{\evensidemargin}{-0.5in}
 \addtolength{\textwidth}{1.19in}
@@ -60,16 +45,12 @@
 \raggedright
 \setlength{\tabcolsep}{0in}
 
-% Sections formatting
 \titleformat{\section}{
   \vspace{-4pt}\scshape\raggedright\large\bfseries
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
-% Ensure that generate pdf is machine readable/ATS parsable
 \pdfgentounicode=1
 
-%-------------------------
-% Custom commands
 \newcommand{\resumeItem}[1]{
   \item\small{
     {#1 \vspace{-2pt}}
@@ -123,27 +104,10 @@
 \begin{document}
 
 \bibliographystyle{unsrt}
-\nobibliography{ref}
+\nobibliography{mypublicationssimple}
 
-%----------HEADING----------
-% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
-%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
-% \end{tabular*}
-
-% \begin{center}
-{\Large \scshape Curriculum Vitae} \\ %\vspace{5pt}
-% Max Planck Institute for Security and Privacy (MPI-SP) \\
-% Universitätsstraße 140 \\
-% 44799 Bochum \\
-% Germany \\ \vspace{5pt}
-\small 
-% \raisebox{-0.1\height}\faPhone\ +49 177 783 5480  ~ \href{mailto:seongmin.lee@mpi-sp.org}{\raisebox{-0.2\height}\faEnvelope\  \underline{seongmin.lee@mpi-sp.org}} ~
-% \href{https://scholar.google.com/citations?user=-YSnc6kAAAAJ&hl=en}{\raisebox{-0.2\height}\faUniversity\ \underline{Google Scholar}}  ~
-% \href{https://github.com/}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/username}}
-% \vspace{-8pt}
-% \end{center}
-
+{\Large \scshape Curriculum Vitae} \\
+\small
 \section{Personal Information}
 
 \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}l}
@@ -153,32 +117,18 @@
   \textbf{Personal Website:} & \href{https://nimgnoeseel.github.io}{\underline{https://nimgnoeseel.github.io}} \\
 \end{tabular*}
 
-% \section{Research Interests}
-
-% My research interest lies in dynamic program analysis, especially using statistical methods on dynamic information from execution to reason about a program's semantic properties, which is incapable or limited in scalability for static analysis. 
-% The goal of my research is to bring program analysis closer to real-world circumstances regarding the scale and complexity of software within the presence of non-experimental or missing data in the analysis.
-
-
-%-----------EDUCATION-----------
 \section{Education and Employment}
 \resumeSubHeadingListStart
-% \resumeSubheading
-%   {Korea Advanced Institue of Science and Technology (KAIST)}{Sep. 2017 -- May 2021}
-%   {Bachelor of Science in Computer Science}{City, State}
 \vspace{-2pt}
 \item Max Planck Institute for Security and Privacy \hfill Germany \vspace{-2pt}
 \vspace{-2pt} \item \hspace{10pt} \textbf{Postdoctoral Researcher, Software Security Research group} (Group head: Dr. Marcel Böhme) \hfill  Sep. 2022 -- Present
-% \vspace{-5pt} \item \hspace{20pt} 
 
 \vspace{-2pt}
 \item Korea Advanced Institute of Science and Technology \hfill Republic of Korea \vspace{-2pt}
 \vspace{-2pt} \item \hspace{10pt} \textbf{Doctor of Philosophy, School of Computing} (Advisor: Dr. Shin Yoo) \hfill  Sep. 2016 -- Aug. 2022
-% \vspace{-5pt} \item \hspace{20pt} 
-% \vspace{-5pt} \item \hspace{20pt} GPA - 4.02/4.3
 
 \vspace{-2pt} \item \hspace{10pt} \textbf{Bachelor of Science, School of Computing} \hfill  Feb. 2012 -- Aug. 2016
 \vspace{-5pt} \item \hspace{10pt} \textbf{Bachelor of Science, Department of Mathematical Sciences}
-% \vspace{-5pt} \item \hspace{20pt} GPA - 3.48/4.3
 \resumeSubHeadingListEnd
 
 \section{Selected Publications}
@@ -186,104 +136,35 @@
 \textbf{Journal Articles}\vspace{-4pt}
 
 \begin{itemize}
-  \item \bibentry{Lee:2021ua}
-  \item \bibentry{Lee:2020ab}
+  \item \bibentry{leeCausalProgramDependence2025}
+  \item \bibentry{leeObservationbasedApproximateDependency2021}
+  \item \bibentry{leeEvaluatingLexicalApproximation2020}
 \end{itemize}
 
 \textbf{Conference/Technical Reports}\vspace{-4pt}
 
 \begin{itemize}
-  \item \bibentry{lee2024chomi}
-  \item \bibentry{Liyanage:2024ab}
-  (*\emph{Co-first authors with equal contribution})
-  \item \bibentry{Lee:2023aa}
-  % \item \bibentry{Oh:2021wj}
-  % \item \bibentry{Lee:2020aa}
-  \item \bibentry{Lee:2019ab}
-  % \item \bibentry{Lee:2019aa}
-  % \item \bibentry{Lee:2017aa}
-  % \item \bibentry{An:2017ui}
-  % \item \bibentry{Sohn:2016aa}
-% \end{itemize}
-
-% \textbf{Posters \& Technical Reports}\vspace{-4pt}
-% \begin{itemize}
-  \item \bibentry{Lee:2021aa}
-  % \item \bibentry{Lee:2018aa}
-  % \item \bibentry{Lee:2017tn}
+  \item \bibentry{leeChaomi2024}
+  \item \bibentry{liyanageExtrapolatingCoverageRate2024}
+        (*\emph{Co-first authors with equal contribution})
+  \item \bibentry{leeStatisticalReachabilityAnalysis2023}
+  \item \bibentry{leeClassifyingFalsePositive2019a}
 \end{itemize}
-
-% \textbf{Software Engineering Notes}\vspace{-4pt}
-% \begin{itemize}
-%   \item \bibentry{Langdon:2020vk}
-% \end{itemize}
-
-
-
-%-----------EXPERIENCE-----------
-% \section{Research Experience}
-% \resumeSubHeadingListStart
-
-% \resumeSubheading
-% {Software Security Group, MPI-SP}{Sep. 2022 -- Present}
-% {Postdoc}{Bochum, Germany}
-% \resumeItemListStart
-% \resumeItem{Researched applying statisical methods for program analysis to overcome the scalability issue of the static analysis -- Statistical Reachability Analysis}
-% \resumeItem{Researched unbiased estimation of the missing mass/probability/expected number of discovering new classes of unknown multinomial distribution}
-% \resumeItemListEnd
-
-% \resumeSubheading
-% {Computational Intelligence for Software Engineering Laboratory (COINSE), KAIST}{Sep. 2016 -- Aug. 2022}
-% {Ph.D. Student}{Daejeon, Republic of Korea}
-% \resumeItemListStart
-% \resumeItem{Researched approximating the degree of dependence between program element using causal inference -- CPDA}
-% \resumeItem{Researched applying statistical models on the observation data to approximate the program dependence -- MOAD}
-% \resumeItem{Researched inferencing the type information in the binary executables using RNN with National Security Research Institute}
-% \resumeItem{Researched classifying the false positive alarms from static checker in continuous integration pipeline using CNN with Samsung Research}
-% \resumeItem{Researched program dependence approximation using the lexical model on the source code -- MOBS}
-% \resumeItemListEnd
-
-% \resumeSubheading
-% {Computational Intelligence for Software Engineering Laboratory (COINSE), KAIST}{Mar. 2016 -- Aug. 2016}
-% {Undergraduate Research Intern}{Daejeon, Republic of Korea}
-% \resumeItemListStart
-% \resumeItem{Researched on the amortised deep parameter optimisation of GPGPU work group size for OpenCV.}
-% \resumeItem{Accelerated the scalablility of Observation based slicing (ORBS) by applying a code distance metric during the slicing.}
-% \resumeItemListEnd
-
-% \resumeSubheading
-% {Programming Language Research Group (PLRG) Lab, KAIST}{Jul. 2015 -- Feb. 2016}
-% {Undergraduate Research Intern}{Daejeon, Republic of Korea}
-% \resumeItemListStart
-% \resumeItem{Developed a source code translator from C\# to C++ with F\#.}
-% \resumeItem{Developed a frontend of Scalable Analysis Framework for ECMAScript (SAFE), a Javascript static analysis tool.}
-% \resumeItemListEnd
-
-% \resumeSubHeadingListEnd
-% \vspace{-16pt}
 
 
 \section{Academic Services}
 *Services before 2023 are omitted.
 \begin{itemize}
-  \item Program committee: (Main Track) ASE'24, ISSTA'24, FUZZING'24, SCAM'24, ASE'23 / (Artifact Evaluation) ISSTA'24, ECOOP'24, USENIX Security'24, ICSE'24, ISSTA'23 / (Student Research Competition) FSE'24 / (Tool Demonstration Track) ASE'24
-  \item Reviewer: TOSEM'24, TSE'24, IST'24, ASE'24 / (External) FSE'24, ECOOP'24, ICSE'23, ISSTA'23
+  \item Program committee: ASE'24, ISSTA'24, FUZZING'24, SCAM'24, ASE'23
+  \item Reviewer: TOSEM'24, TSE'24, IST'24, ASE'24
 \end{itemize}
 
-% \section{Invited Talks}
-% \begin{itemize}
-%   \item \emph{Causal Program Dependence Analysis} \\ Sheffield Causality and Testing Workshop, 2023
-%   \item \emph{Statistical program dependence analysis} \\ Handong Global University, 2022
-%   \item \emph{Observation-based approximate dependency modeling and its use for program slicing} \\ Korea Conference on Software Engineering, 2022
-%   \item \emph{MOBS: Multi-Operator Observation-Based Slicing using Lexical Approximation of Program Dependence} \\ 59th CREST Open Workshop - Multi-language Software Analysis, 2018
-% \end{itemize}
 
 \section{Grants and Fellowships}
 \begin{itemize}
-  \item Title: \emph{Statistical Security Analysis for Large, Evolving Software} \\ 
-  % Funding Agency: CASA - Cyber Security in the Age of Large-Scale Adversaries \\ 
-  Grant ID: DFG under Germany's Excellence Strategy - \textbf{EXC 2092 CASA - 390781972} \\ 
-  Amount: Salary according to the remuneration group E 14 TV-L (full time, $\sim$ \euro{136,000}), Duration: 2024.01.01 -- 2025.12.31
+  \item Title: \emph{Statistical Security Analysis for Large, Evolving Software} \\
+        Grant ID: DFG under Germany's Excellence Strategy - \textbf{EXC 2092 CASA - 390781972} \\
+        Amount: Salary according to the remuneration group E 14 TV-L (full time, $\sim$ \euro{136,000}), Duration: 2024.01.01 -- 2025.12.31
 \end{itemize}
 
 
@@ -295,18 +176,6 @@
           \item \emph{Title of Dissertation: Statistical Program Dependence Approximation}
         \end{itemize}
   \item \textbf{2021 Naver Ph.D. Fellowship Award}: Awarded by NAVER Corp. to Ph.D. candidates who have published an outstanding research paper or have excellent publication performance, 2021
-  % \item Government-sponsored Scholarship, Ministry of Science and ICT of Korea, 2016 - 2022
-  % \item Government-sponsored Scholarship, Ministry of Science and ICT of Korea, 2012 - 2016
 \end{itemize}
 
-% \section{Teaching Experience}
-% \begin{itemize}
-%   \item Teaching Assistant, Automated Software Testing (CS453), School of Computing, KAIST, Spring 2019
-%   \item Teaching Assistant, Artificial Intelligence Based Software Engineering (CS454), School of Computing, KAIST, Fall 2018
-%   \item Teaching Assistant, Introduction to Logic for Computer Science (CS402), School of Computing, KAIST, Spring 2018
-%   \item Teaching Assistant, Artificial Intelligence Based Software Engineering (CS454), School of Computing, KAIST, Fall 2017
-%   \item Teaching Assistant, Introduction to Logic for Computer Science (CS402), School of Computing, KAIST, Spring 2017
-%   \item Teaching Assistant, Special Topics in Computer Science $\langle$Search Based Software Engineering$\rangle$ (CS492), School of Computing, KAIST, Fall 2016
-
-% \end{itemize}
 \end{document}
