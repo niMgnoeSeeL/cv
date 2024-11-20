@@ -1,0 +1,44 @@
+\begin{thebibliography}{1}
+
+\bibitem{leeObservationbasedApproximateDependency2021}
+S.~Lee, D.~Binkley, R.~Feldt, N.~Gold, and S.~Yoo.
+\newblock Observation-based approximate dependency modeling and its use for
+  program slicing.
+\newblock {\em Journal of Systems and Software}, 179:110988, Sept. 2021.
+
+\bibitem{leeCausalProgramDependence2025a}
+S.~Lee, D.~Binkley, R.~Feldt, N.~Gold, and S.~Yoo.
+\newblock Causal program dependence analysis.
+\newblock {\em Science of Computer Programming}, 240:103208, Feb. 2025.
+
+\bibitem{leeStatisticalReachabilityAnalysis2023}
+S.~Lee and M.~B{\"o}hme.
+\newblock Statistical {{Reachability Analysis}}.
+\newblock In {\em Proceedings of the 31st {{ACM Joint European Software
+  Engineering Conference}} and {{Symposium}} on the {{Foundations}} of
+  {{Software Engineering}}}, {{ESEC}}/{{FSE}} 2023, pages 326--337, New York,
+  NY, USA, Nov. 2023. Association for Computing Machinery.
+
+\bibitem{leeAccountingMissingEvents2025}
+S.~Lee, S.~Minocha, and M.~B{\"o}hme.
+\newblock Accounting for {{Missing Events}} in {{Statistical Information
+  Leakage Analysis}}.
+\newblock In {\em Proceedings of the {{IEEE}}/{{ACM}} 47th {{International
+  Conference}} on {{Software Engineering}}}, {{ICSE}} '25, pages 1--12, New
+  York, NY, USA, 2025. Association for Computing Machinery.
+
+\bibitem{liyanageExtrapolatingCoverageRate2024}
+D.~Liyanage, S.~Lee, C.~Tantithamthavorn, and M.~B{\"o}hme.
+\newblock Extrapolating {{Coverage Rate}} in {{Greybox Fuzzing}}.
+\newblock In {\em Proceedings of the {{IEEE}}/{{ACM}} 46th {{International
+  Conference}} on {{Software Engineering}}}, {{ICSE}} '24, pages 1--12, New
+  York, NY, USA, Apr. 2024. Association for Computing Machinery.
+
+\bibitem{ohEffectivelySamplingHigher2021}
+S.~Oh, S.~Lee, and S.~Yoo.
+\newblock Effectively {{Sampling Higher Order Mutants Using Causal Effect}}.
+\newblock In {\em 2021 {{IEEE International Conference}} on {{Software
+  Testing}}, {{Verification}} and {{Validation Workshops}} ({{ICSTW}})}, pages
+  19--24, Apr. 2021.
+
+\end{thebibliography}

@@ -1,0 +1,125 @@
+\begin{thebibliography}{10}
+
+\bibitem{leeCausalProgramDependence2025a}
+\textbf{Seongmin Lee}, Dave Binkley, Robert Feldt, Nicolas Gold, and Shin Yoo.
+\newblock Causal program dependence analysis.
+\newblock {\em Science of Computer Programming}, 240:103208, February 2025.
+
+\bibitem{leeObservationbasedApproximateDependency2021}
+\textbf{Seongmin Lee}, David Binkley, Robert Feldt, Nicolas Gold, and Shin Yoo.
+\newblock Observation-based approximate dependency modeling and its use for
+  program slicing.
+\newblock {\em Journal of Systems and Software}, 179:110988, September 2021.
+
+\bibitem{leeEvaluatingLexicalApproximation2020}
+\textbf{Seongmin Lee}, David Binkley, Nicolas Gold, Syed Islam, Jens Krinke, and Shin
+  Yoo.
+\newblock Evaluating lexical approximation of program dependence.
+\newblock {\em Journal of Systems and Software}, 160:110459, February 2020.
+
+\bibitem{leeAccountingMissingEvents2025}
+\textbf{Seongmin Lee}, Shreyas Minocha, and Marcel B{\"o}hme.
+\newblock Accounting for {{Missing Events}} in {{Statistical Information
+  Leakage Analysis}}.
+\newblock In {\em Proceedings of the {{IEEE}}/{{ACM}} 47th {{International
+  Conference}} on {{Software Engineering}}}, {{ICSE}} '25, pages 1--12, New
+  York, NY, USA, 2025. Association for Computing Machinery.
+
+\bibitem{liyanageExtrapolatingCoverageRate2024}
+Danushka Liyanage*, \textbf{Seongmin Lee}*, Chakkrit Tantithamthavorn, and Marcel
+  B{\"o}hme.
+\newblock Extrapolating {{Coverage Rate}} in {{Greybox Fuzzing}}.
+\newblock In {\em Proceedings of the {{IEEE}}/{{ACM}} 46th {{International
+  Conference}} on {{Software Engineering}}}, {{ICSE}} '24, pages 1--12, New
+  York, NY, USA, April 2024. Association for Computing Machinery.
+
+\bibitem{leeStatisticalReachabilityAnalysis2023}
+\textbf{Seongmin Lee} and Marcel B{\"o}hme.
+\newblock Statistical {{Reachability Analysis}}.
+\newblock In {\em Proceedings of the 31st {{ACM Joint European Software
+  Engineering Conference}} and {{Symposium}} on the {{Foundations}} of
+  {{Software Engineering}}}, {{ESEC}}/{{FSE}} 2023, pages 326--337, New York,
+  NY, USA, November 2023. Association for Computing Machinery.
+
+\bibitem{leeMOADModelingObservationBased2019}
+\textbf{Seongmin Lee}, David Binkley, Robert Feldt, Nicolas Gold, and Shin Yoo.
+\newblock {{MOAD}}: {{Modeling Observation-Based Approximate Dependency}}.
+\newblock In {\em 2019 19th {{International Working Conference}} on {{Source
+  Code Analysis}} and {{Manipulation}} ({{SCAM}})}, pages 12--22, September
+  2019.
+
+\bibitem{leeClassifyingFalsePositive2019}
+\textbf{Seongmin Lee}, Shin Hong, Jungbae Yi, Taeksu Kim, Chul-Joo Kim, and Shin Yoo.
+\newblock Classifying {{False Positive Static Checker Alarms}} in {{Continuous
+  Integration Using Convolutional Neural Networks}}.
+\newblock In {\em 2019 12th {{IEEE Conference}} on {{Software Testing}},
+  {{Validation}} and {{Verification}} ({{ICST}})}, pages 391--401, April 2019.
+
+\bibitem{leeStructureawareResidualRisk2025}
+\textbf{Seongmin Lee} and Marcel B{\"o}hme.
+\newblock Structure-aware {{Residual Risk Analysis}}, 2025.
+
+\bibitem{liuCanLLMGenerate2025}
+Jing Liu*, \textbf{Seongmin Lee}*, Eleonora Losiouk, and Marcel B{\"o}hme.
+\newblock Can {{LLM Generate Regression Tests}} for {{Software Commits}}?,
+  2025.
+
+\bibitem{leeHowMuchUnseen2024}
+\textbf{Seongmin Lee} and Marcel B{\"o}hme.
+\newblock How {{Much}} is {{Unseen Depends Chiefly}} on {{Information About}}
+  the {{Seen}}, February 2024.
+
+\bibitem{langdonGeneticImprovementICSE2020}
+William~B. Langdon, Westley Weimer, Justyna Petke, Erik Fredericks, \textbf{Seongmin
+  Lee}, Emily Winter, Michail Basios, Myra~B. Cohen, Aymeric Blot, Markus
+  Wagner, Bobby~R. Bruce, Shin Yoo, Simos Gerasimou, Oliver Krauss, Yu~Huang,
+  and Michael Gerten.
+\newblock Genetic {{Improvement}} @ {{ICSE}} 2020.
+\newblock {\em SIGSOFT Softw. Eng. Notes}, 45(4):24--30, October 2020.
+
+\bibitem{ohEffectivelySamplingHigher2021}
+Saeyoon Oh, \textbf{Seongmin Lee}, and Shin Yoo.
+\newblock Effectively {{Sampling Higher Order Mutants Using Causal Effect}}.
+\newblock In {\em 2021 {{IEEE International Conference}} on {{Software
+  Testing}}, {{Verification}} and {{Validation Workshops}} ({{ICSTW}})}, pages
+  19--24, April 2021.
+
+\bibitem{leeScalableApproximateProgram2020}
+\textbf{Seongmin Lee}.
+\newblock Scalable and approximate program dependence analysis.
+\newblock In {\em Proceedings of the {{ACM}}/{{IEEE}} 42nd {{International
+  Conference}} on {{Software Engineering}}: {{Companion Proceedings}}},
+  {{ICSE}} '20, pages 162--165, New York, NY, USA, October 2020. Association
+  for Computing Machinery.
+
+\bibitem{anPYGGIPythonGeneral2017}
+Gabin An, Jinhan Kim, \textbf{Seongmin Lee}, and Shin Yoo.
+\newblock {PYGGI: Python General Framework for Genetic Improvement}.
+\newblock {\em Journal of Korean Institute of Information Scientists and
+  Engineers}, pages 536--538, December 2017.
+
+\bibitem{leeMOBSMultiOperatorObservationBased2018}
+\textbf{Seongmin Lee}, David Binkley, Nicolas Gold, Syed Islam, Jens Krinke, and Shin
+  Yoo.
+\newblock {{MOBS}}: Multi-operator observation-based slicing using lexical
+  approximation of program dependence.
+\newblock In {\em Proceedings of the 40th {{International Conference}} on
+  {{Software Engineering}}: {{Companion Proceeedings}}}, {{ICSE}} '18, pages
+  302--303, New York, NY, USA, May 2018. Association for Computing Machinery.
+
+\bibitem{leeHyperheuristicObservationBased2017}
+\textbf{Seongmin Lee} and Shin Yoo.
+\newblock Hyperheuristic {{Observation Based Slicing}} of {{Guava}}.
+\newblock In Tim Menzies and Justyna Petke, editors, {\em Search {{Based
+  Software Engineering}}}, pages 175--180, Cham, 2017. Springer International
+  Publishing.
+
+\bibitem{sohnAmortisedDeepParameter2016}
+Jeongju Sohn, \textbf{Seongmin Lee}, and Shin Yoo.
+\newblock Amortised {{Deep Parameter Optimisation}} of {{GPGPU Work Group
+  Size}} for {{OpenCV}}.
+\newblock In Federica Sarro and Kalyanmoy Deb, editors, {\em Search {{Based
+  Software Engineering}}}, pages 211--217, Cham, 2016. Springer International
+  Publishing.
+
+\end{thebibliography}
