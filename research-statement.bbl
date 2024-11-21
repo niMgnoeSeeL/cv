@@ -1,0 +1,58 @@
+\begin{thebibliography}{1}
+
+\bibitem{leeObservationbasedApproximateDependency2021}
+{\sc Lee, S., Binkley, D., Feldt, R., Gold, N., and Yoo, S.}
+\newblock Observation-based approximate dependency modeling and its use for
+  program slicing.
+\newblock {\em Journal of Systems and Software 179\/} (Sept. 2021), 110988.
+
+\bibitem{leeCausalProgramDependence2025a}
+{\sc Lee, S., Binkley, D., Feldt, R., Gold, N., and Yoo, S.}
+\newblock Causal program dependence analysis.
+\newblock {\em Science of Computer Programming 240\/} (Feb. 2025), 103208.
+
+\bibitem{leeEvaluatingLexicalApproximation2020}
+{\sc Lee, S., Binkley, D., Gold, N., Islam, S., Krinke, J., and Yoo, S.}
+\newblock Evaluating lexical approximation of program dependence.
+\newblock {\em Journal of Systems and Software 160\/} (Feb. 2020), 110459.
+
+\bibitem{leeStatisticalReachabilityAnalysis2023}
+{\sc Lee, S., and B{\"o}hme, M.}
+\newblock Statistical {{Reachability Analysis}}.
+\newblock In {\em Proceedings of the 31st {{ACM Joint European Software
+  Engineering Conference}} and {{Symposium}} on the {{Foundations}} of
+  {{Software Engineering}}\/} (New York, NY, USA, Nov. 2023), {{ESEC}}/{{FSE}}
+  2023, Association for Computing Machinery, pp.~326--337.
+
+\bibitem{leeHowMuchUnseen2024}
+{\sc Lee, S., and B{\"o}hme, M.}
+\newblock How {{Much}} is {{Unseen Depends Chiefly}} on {{Information About}}
+  the {{Seen}}, Feb. 2024.
+
+\bibitem{leeStructureawareResidualRisk2025}
+{\sc Lee, S., and B{\"o}hme, M.}
+\newblock Structure-aware {{Residual Risk Analysis}}, 2025.
+
+\bibitem{leeAccountingMissingEvents2025}
+{\sc Lee, S., Minocha, S., and B{\"o}hme, M.}
+\newblock Accounting for {{Missing Events}} in {{Statistical Information
+  Leakage Analysis}}.
+\newblock In {\em Proceedings of the {{IEEE}}/{{ACM}} 47th {{International
+  Conference}} on {{Software Engineering}}\/} (New York, NY, USA, 2025),
+  {{ICSE}} '25, Association for Computing Machinery, pp.~1--12.
+
+\bibitem{liyanageExtrapolatingCoverageRate2024}
+{\sc Liyanage, D., Lee, S., Tantithamthavorn, C., and B{\"o}hme, M.}
+\newblock Extrapolating {{Coverage Rate}} in {{Greybox Fuzzing}}.
+\newblock In {\em Proceedings of the {{IEEE}}/{{ACM}} 46th {{International
+  Conference}} on {{Software Engineering}}\/} (New York, NY, USA, Apr. 2024),
+  {{ICSE}} '24, Association for Computing Machinery, pp.~1--12.
+
+\bibitem{ohEffectivelySamplingHigher2021}
+{\sc Oh, S., Lee, S., and Yoo, S.}
+\newblock Effectively {{Sampling Higher Order Mutants Using Causal Effect}}.
+\newblock In {\em 2021 {{IEEE International Conference}} on {{Software
+  Testing}}, {{Verification}} and {{Validation Workshops}} ({{ICSTW}})\/} (Apr.
+  2021), pp.~19--24.
+
+\end{thebibliography}

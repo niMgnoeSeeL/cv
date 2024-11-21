@@ -1,0 +1,92 @@
+\documentclass{article}
+\usepackage[margin=1in]{geometry} % Optional: Adjust page margins
+\usepackage{fancyhdr} % For custom headers
+\usepackage{booktabs}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{kotex}
+\usepackage{titlesec}
+
+% make reference blue
+\hypersetup{
+  colorlinks,
+  linkcolor={blue},
+  citecolor={blue},
+  urlcolor={blue}
+}
+% \renewcommand{\normalsize}{\fontsize{9pt}{11pt}\selectfont}
+% \titleformat{\section}
+%   {\normalfont\fontsize{13}{13}\bfseries}{\thesection}{1em}{}
+
+% Define the global footer
+\pagestyle{fancy}
+\fancyhf{} % Clear all header/footer fields
+\fancyfoot[R]{Page \thepage} % Footer centered on all pages
+
+
+% Define the header for the first page
+\fancypagestyle{firstpage}{
+    \fancyhf{} % Clear all header/footer fields
+    \fancyhead[L]{\textbf{Teaching Statement}} % Left-aligned header
+    % \fancyhead[C]{Center Header (optional)} % Centered header
+    \fancyhead[R]{\textbf{Seongmin Lee}} % Right-aligned header
+    \fancyfoot[R]{Page \thepage} % Footer right
+}
+
+\begin{document}
+
+\thispagestyle{firstpage} % Apply the custom header only to the first page
+
+\noindent Over time, I have realized that what truly \emph{motivates me to learn}, so that \emph{stays with me after being taught}, and, eventually, \emph{I can ultimately apply in my life} are the things I understand \emph{why they are meaningful}. This insight shapes the central theme of my teaching philosophy: helping students grasp the underlying context of \textbf{why the subject matters}, fostering both \textbf{self-motivation} and \textbf{self-discovery}—guiding them to explore what they truly enjoy and value. I see my role as a mentor on the meta-level of education: \emph{`I am not merely an instructor but a teacher, not a supervisor but an advisor.'} My ultimate goal is to equip students with the skills to learn independently, develop self-motivation, and uncover their passions, empowering them to adapt, grow, and thrive beyond the classroom.
+
+\vspace{.5em}\noindent\textbf{Experience Overview}\vspace{.5em}
+
+\noindent Classroom Teaching: I have served as a teaching assistant six times for four different courses at the Korea Advanced Institute of Science and Technology (KAIST). These courses ranged from introductory computer science to advanced software engineering. As a teaching assistant, I co-designed course materials, led weekly discussion sections, and graded assignments.
+In addition, I have delivered guest lectures at the Fuzzing and Software Security Summer School hosted by the National University of Singapore (NUS) and presented several invited talks at various institutions and conferences, both nationally and internationally.
+
+\vspace{0.5em}
+\noindent Academic Mentoring:  I have mentored three undergraduate students and one Ph.D. student through their research projects, guiding them from defining research questions to writing and submitting research papers, with continuous feedback. All of my mentees have successfully published or submitted their research papers—most as first authors—to prestigious conferences, and many have continued their research careers in academia. In addition, I have also served as an Open Science Ambassador at the Max Planck Institute for Security and Privacy (MPI-SP), raising awareness of Open Science practices, sharing information with colleagues, and participating in annual meetings to discuss strategies and the status of Open Science.
+
+\vspace{.5em}\noindent\textbf{Classroom Teaching}\vspace{.5em}
+
+\noindent \emph{I believe what is important for students is not just earning a good grade, but understanding why the subject is meaningful; more importantly, they should genuinely share this belief and feel they have truly achieved it.} 
+
+This belief stems from my personal experience, particularly two courses I took during my undergraduate years. I still remember the moment before the final exam in a programming language course when I realized I understood not only the features we designed into the minimal programming language but also why each was necessary, how they connected, and how they were implemented. Building a language from scratch gave me a mental map of the entire process, a turning point for me—it was both helpful and joyful, inspiring me to apply the same approach when studying other courses and eventually pursue a research career in computer science. This contrast became even clearer during another engineering course\footnote{Course name omitted for privacy.}, where numerous methodologies were introduced but without context or connections, making them harder to grasp.
+
+My teaching philosophy centers on empowering students to see the broader context and connections within a subject, enabling them to integrate what they learn into a meaningful whole. I believe that understanding how individual concepts relate to the bigger picture fosters self-motivation, making learning both enjoyable and effective. This approach helps students internalize knowledge, making it easier for them to adapt and apply it in diverse situations throughout their lives. My ultimate goal is for students to develop their own mental map of the subject—a framework they can build on long after the course ends.
+
+Equally important to understanding the material is fostering a genuine belief in their ability to master it. True learning goes beyond absorbing information; it involves equipping students with the tools to learn independently, to ask the right questions, and to seek meaningful solutions. University education is just the starting point—life continually presents challenges that require us to learn anew. By helping students cultivate this mindset, I aim to prepare them not just for exams, but for a lifetime of learning and growth.
+
+My teaching materials will be designed with this philosophy in mind. The core strategies for the course and assignments will include: 1) present a broad overview of the subject early on, 2) consistently connect each concept to its surrounding context, and 3) link all concepts back to the overarching framework. Additionally, office hours will focus on individual mentoring, identifying gaps in students' understanding, and guiding them to bridge those gaps while connecting their knowledge to the broader context.
+
+% \vspace{.5em}
+\newpage
+\noindent\textbf{Academic Mentoring}\vspace{.5em}
+
+\noindent \emph{``... the publishing of research papers does not need to be the goal of a PhD student. Instead, I believe that the most important goal of a PhD student should be to learn how to do research.~\cite{Kohno}''\hfill--- Prof. Yoshi Kohno}
+
+\vspace{.5em}
+
+\noindent Pursuing a Ph.D. is a long and challenging journey, filled with obstacles such as rejections, burnout, self-doubt, and personal crises. I believe the key to overcoming these challenges lies in cultivating the right mindset, understanding the meaning of research, and fostering self-motivation—principles aligned with my teaching philosophy. The ultimate goal of a Ph.D. should not be merely publishing in top-tier conferences, as such outcomes are often influenced by factors beyond the student's control. Instead, \textbf{the focus should be on learning to conduct meaningful research and contributing to the field and society}.
+
+This perspective comes from my own experience as a Ph.D. student. During the last two to three years of my doctoral journey, papers related to my main research agenda were repeatedly rejected. However, I persevered by adopting a mindset that emphasized the intrinsic value of my research rather than its acceptance at a conference. I reminded myself that my work had unique contributions and that my progress as a researcher was not defined by publication success. This mindset helped me stay motivated, resilient, and committed to growth, despite setbacks.
+
+To support this vision, I employ three core strategies in mentoring:
+\begin{itemize}
+    \item \textbf{Early Exposure to the Research Cycle}: I encourage students to experience the full research cycle as early as possible, from defining research questions and designing experiments to analyzing results, writing papers, and presenting their work. By engaging with the submission process—including short papers, posters, and doctoral symposiums—and attending conferences, students can gain early insights into what it means to be a researcher. This hands-on experience is invaluable for building motivation and confidence.
+    \item \textbf{Frequent Feedback and Communication}: Long gaps between feedback can frustrate students. I prioritize timely, constructive feedback and foster a collaborative environment where students feel supported and empowered to take ownership of their work, emphasizing my role as an advisor rather than a supervisor.
+    \item \textbf{Exposure to Diverse Topics}: Exposing students to diverse research areas helps them develop independence and discover their passions. For example, I organized reading groups at the Max Planck Institute, enabling students to explore various topics, engage in discussions, and grow as independent thinkers.
+\end{itemize}
+
+As A. Nico Habermann aptly said: \emph{``Focus on the students, since graduating great students means you'll produce great research, while focusing on the research may or may not produce great students.''} This philosophy resonates deeply with me. By prioritizing the growth and well-being of my students, I strive to guide them not only toward academic success but also toward becoming resilient, curious, and capable researchers prepared to tackle the challenges of the future.
+
+% bib
+\bibliographystyle{plain}
+\begin{thebibliography}{9}
+\bibitem{Kohno}
+Kohno, Yoshi. “The Goal of a PhD Program Is Not to Write and Publish Research Papers.” Navigating Academia (blog), September 10, 2024. https://medium.com/navigating-academia/the-goal-of-a-phd-program-is-not-to-write-and-publish-research-papers-01e6ace7727d.
+\end{thebibliography}
+
+
+\end{document}
