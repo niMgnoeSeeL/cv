@@ -1,0 +1,156 @@
+\documentclass{article}
+
+\usepackage{charter} % Use the Charter font
+
+\usepackage[
+	a4paper, % Paper size
+	top=1in, % Top margin
+	bottom=1in, % Bottom margin
+	left=1in, % Left margin
+	right=1in, % Right margin
+	%showframe % Uncomment to show frames around the margins for debugging
+]{geometry}
+
+\setlength{\parindent}{0pt} % Paragraph indentation
+\setlength{\parskip}{1em} % Vertical space between paragraphs
+
+\usepackage{graphicx} % Required for including images
+\usepackage{fancyhdr} % Required for customizing headers and footers
+\usepackage[official]{eurosym} % Euro symbol
+\usepackage{ifthen} % Required for if-else statements
+\usepackage{xcolor} % Required for text color
+\usepackage{xspace} % Required for text spacing
+
+\fancypagestyle{firstpage}{%
+	\fancyhf{} % Clear default headers/footers
+	\renewcommand{\headrulewidth}{0pt} % No header rule
+	\renewcommand{\footrulewidth}{1pt} % Footer rule thickness
+}
+
+\fancypagestyle{subsequentpages}{%
+	\fancyhf{} % Clear default headers/footers
+	\renewcommand{\headrulewidth}{1pt} % Header rule thickness
+	\renewcommand{\footrulewidth}{1pt} % Footer rule thickness
+}
+
+% fixme
+\newcommand{\fixme}[1]{\textcolor{red}{#1}}
+ 
+% Use the first page headers/footers style on the first page
+\AtBeginDocument{\thispagestyle{firstpage}}
+ % Use the subsequent pages headers/footers style on subsequent pages
+\pagestyle{subsequentpages}
+
+\newcommand{\setuniversity}[1]{%
+    \def\university{#1}%
+    \ifthenelse{\equal{#1}{University A}}{%
+        \def\position{Assistant Professor\xspace}%
+        \def\department{Department of Computer Science\xspace}%
+		\def\sentencespecific{I am particularly excited about the opportunity to collaborate with the \fixme{Cybersecurity Research Center} and the \fixme{Machine Learning Research Group}.}%
+		\def\requirements{(1) CV, (2) research statement, (3) teaching statement, and (4) statement on diversity, equity, and inclusion}%
+    }{%
+    \ifthenelse{\equal{#1}{University B}}{%
+        \def\position{Lecturer\xspace}%
+        \def\department{School of Software Engineering\xspace}%
+		\def\sentencespecific{I am particularly excited about the opportunity to collaborate with the \fixme{Software Engineering Research Group} and the \fixme{Data Science Research Group}.}%
+		\def\requirements{(1) CV, (2) research statement, (3) teaching statement, and (4) statement on diversity, equity, and inclusion}%
+    }{%
+		\def\university{\fixme{University}\xspace}%
+        \def\position{\fixme{Position}\xspace}%
+        \def\department{\fixme{Department}\xspace}%
+		\def\sentencespecific{\fixme{TODO: Sentences that are specific to University.}\xspace}%
+		\def\requirements{\fixme{TODO:(1) CV, (2) research statement, (3) teaching statement, and (4) statement on diversity, equity, and inclusion}}%
+    }}%
+}
+
+% Macro for each university
+\newcommand{\writeletter}{%
+%-------------------------------------------------------------------------------
+%	LETTER CONTENT
+%-------------------------------------------------------------------------------
+
+% 1. Quickly introduce who you are (e.g., name, current institution and title).
+% 2. Specify the job you are applying for (including any reference numbers).
+% 3. Give a high-level overview of your research focus.
+% 4. Indicate why you are excited about the position, why you are a good fit, and why you are likely to accept an offer.
+% 5. Mention any special circumstances (e.g., two-body problem).
+
+% Limit the overview of your research focus to a paragraph or two; your research statement is the place for detail. This is particularly important when applying to large schools that may have many independent searches but only one application portal. If you find it difficult to summarize, Wes recommends prioritizing outcomes (e.g., awards) over lower-level mechanisms (e.g., mentioning that you use a particular type of dataflow analysis). Make it easy for a hiring chair in your area to quickly realize you’re one of theirs!
+
+% If a portal asks you to select research area keywords, it is to your advantage to be accurate. At many institutions, different groups of faculty will read different applications: for example, architecture faculty may read and evaluate architecture applications. If you are an architecture candidate who has one theory publication, checking both the architecture and theory boxes runs the risk that your application will be evaluated by theory professors, who may or may not know if ASPLOS and MICRO are good venues. This issue can be difficult to navigate for interdisciplinary applicants, and we recommend talking to your advisor about how to position yourself and using other mechanisms available to you (such as your cover letter and research statement) to further clarify your expertise.
+
+% Reasons you are excited about the position can include the type of school (public vs. private, R1 vs. liberal arts), the location, specific initiatives or centers related to your research, and past collaborations you’ve had with faculty at the institution. If someone on the inside told you to apply, be sure to mention it in your cover letter.
+
+% Kevin Leach notes that he prepared a generalized cover letter and then changed sentences to specialize it to each department, such as by listing faculty he knew. Kevin Angstadt notes that teaching-focused and research-focused positions may merit different cover letter contents.
+
+
+
+I am writing to apply for an \position position in the Department of \department at the \university.
+
+I am a postdoctoral researcher at the Max Planck Institute for Security and Privacy, where I conduct research on \textbf{software engineering}, focusing on \textbf{program analysis} and \textbf{software testing}. My goal is to develop scalable and reliable methodologies to ensure software correctness in complex and critical modern software systems. To achieve this, I employ interdisciplinary statistical techniques to analyze program behavior, enhancing the precision and robustness of analysis and testing. I am excited about the opportunity to join as an \fixme{Assistant Professor} at the \university.
+% Reasons you are excited about the position can include the type of school (public vs. private, R1 vs. liberal arts), the location, specific initiatives or centers related to your research, and past collaborations you’ve had with faculty at the institution.
+\sentencespecific
+
+\noindent \textbf{Research:} My research applies statistical methods, such as causal inference and biostatistics, to analyze software behavior, addressing the fundamental limitations of conventional software engineering techniques in practice. This work has led to two key contributions:
+1) Addressing the unreliability of software testing caused by insufficient test coverage, I estimated the quantitative likelihood of residual risks in software systems using discovery probability estimation from biostatistics.
+2) Overcoming the limited scalability of conventional static analysis, I uncovered hidden dependencies between software components by establishing a novel dependency analysis framework based on counterfactual causal reasoning.
+My work has been published in top-tier venues, including ICSE, ESEC/FSE, and JSS, and is supported by a research grant from the German Research Foundation (DFG) under Germany's Excellence Strategy, amounting to approximately \euro136,000.
+
+If I were to join \university, I would continue advancing software engineering by integrating advanced statistical techniques into the field. My vision is to drive a paradigm shift by establishing a statistical foundation for software analysis, leveraging interdisciplinary methods to address challenges where conventional approaches fall short. I am confident in achieving this goal, particularly in an era of big data in software engineering, where overlooked statistical methods offer unique contributions, such as explainability and addressing data scarcity—needs that have become increasingly critical in areas less served by extensively studied ML-like techniques.
+% Based on the foundational research on statistical software engineering, I am excited to continue integrating advanced statistical techniques to 
+
+% several research directions as a faculty member at the \university. I am leading the development of this novel software testing paradigm and believe it will have a significant impact on the field as 1) modern era of software development produces ample data, which ML-like techniques leverage, yet 2) the lack of other statistical methods are overlooked, where they can provide a complementary analysis where ML-like techniques are not applicable (e.g., statistical guarantee, data scarcity, or explainability).
+
+\noindent \textbf{Teaching and Research Mentoring:} I have served as a teaching assistant six times for four courses at the Korea Advanced Institute of Science and Technology (KAIST), spanning introductory computer science to advanced software engineering. In this role, I co-designed course materials, led weekly discussions, and graded assignments. As a research mentor, I have guided three undergraduate students and one Ph.D. student through projects that resulted in three peer-reviewed publications, including two first-authored by the students, at top-tier software engineering venues.
+
+\noindent \textbf{Service:} I am committed to contributing to both academia and institutional service. I have served as a program committee member for top-tier conferences, including FSE, ASE, and ISSTA, as well as a reviewer for leading journals such as TSE and TOSEM. Additionally, I serve as an Open Science Ambassador at the Max Planck Society, where I promote Open Science practices and provide valuable resources to colleagues. I am also a member of the Early Career Researcher Board at the Cyber Security in the Age of Large-Scale Adversaries (CASA) Graduate School, where I help organize activities and address priorities for early career researchers.
+
+Enclosed for your review are my \requirements. My achievements in research, mentorship, and collaboration demonstrate my readiness for a tenure-track faculty position. I am excited about the opportunity to continue my research and contribute to the academic community at \university. Thank you for considering my application.
+}
+
+\begin{document}
+
+\includegraphics[width=0.4\textwidth]{mpi.pdf}
+
+\vspace{-1em}
+
+\rule{\linewidth}{1pt}
+
+\bigskip\bigskip
+
+\hfill
+\begin{tabular}{l @{}}
+	\today \bigskip\\ % Date
+	Seongmin Lee, Ph.D. \\
+	Research Fellow \\
+	Max Planck Institute for Security and Privacy\\
+    Universitätsstraße 140 \\
+    Bochum, Nordrhein-Westfalen 44799 \\
+    Germany \\ % Address
+	Phone: (+49) 1771835480 \\
+	Email: seongmin.lee@mpi-sp.org
+\end{tabular}
+
+\bigskip
+
+\bigskip
+
+Dear Faculty Hiring Committee,
+
+\bigskip
+
+\setuniversity{Default}
+\writeletter
+
+\bigskip
+
+Sincerely yours,
+
+\vspace{-.5em}
+\includegraphics[width=0.15\textwidth,trim={0 35cm 0 0}]{signature.pdf}
+
+\vspace{50pt}
+
+Seongmin Lee
+
+\end{document}
