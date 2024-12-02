@@ -1,0 +1,151 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Long Lined Cover Letter
+% LaTeX Template
+% Version 2.0 (September 17, 2021)
+%
+% This template originates from:
+% https://www.LaTeXTemplates.com
+%
+% Authors: Fanchao Chen
+% (chenfc@fudan.edu.cn)
+%
+% License:
+% CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{article}
+
+\usepackage{charter} % Use the Charter font
+
+\usepackage[
+	a4paper, % Paper size
+	top=1in, % Top margin
+	bottom=1in, % Bottom margin
+	left=1in, % Left margin
+	right=1in, % Right margin
+	%showframe % Uncomment to show frames around the margins for debugging purposes
+]{geometry}
+
+\setlength{\parindent}{0pt} % Paragraph indentation
+\setlength{\parskip}{1em} % Vertical space between paragraphs
+
+\usepackage{graphicx} % Required for including images
+% svg package is required for svg images
+\usepackage{svg}
+
+\usepackage{fancyhdr} % Required for customizing headers and footers
+
+\fancypagestyle{firstpage}{%
+	\fancyhf{} % Clear default headers/footers
+	\renewcommand{\headrulewidth}{0pt} % No header rule
+	\renewcommand{\footrulewidth}{1pt} % Footer rule thickness
+}
+
+\fancypagestyle{subsequentpages}{%
+	\fancyhf{} % Clear default headers/footers
+	\renewcommand{\headrulewidth}{1pt} % Header rule thickness
+	\renewcommand{\footrulewidth}{1pt} % Footer rule thickness
+}
+
+% fixme
+\newcommand{\fixme}[1]{\textcolor{red}{#1}}
+
+\AtBeginDocument{\thispagestyle{firstpage}} % Use the first page headers/footers style on the first page
+\pagestyle{subsequentpages} % Use the subsequent pages headers/footers style on subsequent pages
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	FIRST PAGE HEADER
+%----------------------------------------------------------------------------------------
+
+\includegraphics[width=0.4\textwidth]{mpi.pdf}
+
+\vspace{-1em} % Pull the rule closer to the logo
+
+\rule{\linewidth}{1pt} % Horizontal rule
+
+\bigskip\bigskip % Vertical whitespace
+
+%----------------------------------------------------------------------------------------
+%	YOUR NAME AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\hfill
+\begin{tabular}{l @{}}
+	\today \bigskip\\ % Date
+	Seongmin Lee, Ph.D. \\
+	Research Fellow \\
+	Max Planck Institute for Security and Privacy\\
+    Universitätsstraße 140 \\
+    Bochum, Nordrhein-Westfalen 44799 \\
+    Germany \\ % Address
+	Phone: (+49) 1771835480 \\
+	Email: seongmin.lee@mpi-sp.org
+\end{tabular}
+
+\bigskip % Vertical whitespace
+
+%----------------------------------------------------------------------------------------
+%	ADDRESSEE AND GREETING
+%----------------------------------------------------------------------------------------
+
+\bigskip % Vertical whitespace
+
+Dear Faculty Hiring Committee,
+
+\bigskip % Vertical whitespace
+
+%----------------------------------------------------------------------------------------
+%	LETTER CONTENT
+%----------------------------------------------------------------------------------------
+
+% 1. Quickly introduce who you are (e.g., name, current institution and title).
+% 2. Specify the job you are applying for (including any reference numbers).
+% 3. Give a high-level overview of your research focus.
+% 4. Indicate why you are excited about the position, why you are a good fit, and why you are likely to accept an offer.
+% 5. Mention any special circumstances (e.g., two-body problem).
+
+% Limit the overview of your research focus to a paragraph or two; your research statement is the place for detail. This is particularly important when applying to large schools that may have many independent searches but only one application portal. If you find it difficult to summarize, Wes recommends prioritizing outcomes (e.g., awards) over lower-level mechanisms (e.g., mentioning that you use a particular type of dataflow analysis). Make it easy for a hiring chair in your area to quickly realize you’re one of theirs!
+
+% If a portal asks you to select research area keywords, it is to your advantage to be accurate. At many institutions, different groups of faculty will read different applications: for example, architecture faculty may read and evaluate architecture applications. If you are an architecture candidate who has one theory publication, checking both the architecture and theory boxes runs the risk that your application will be evaluated by theory professors, who may or may not know if ASPLOS and MICRO are good venues. This issue can be difficult to navigate for interdisciplinary applicants, and we recommend talking to your advisor about how to position yourself and using other mechanisms available to you (such as your cover letter and research statement) to further clarify your expertise.
+
+% Reasons you are excited about the position can include the type of school (public vs. private, R1 vs. liberal arts), the location, specific initiatives or centers related to your research, and past collaborations you’ve had with faculty at the institution. If someone on the inside told you to apply, be sure to mention it in your cover letter.
+
+% Kevin Leach notes that he prepared a generalized cover letter and then changed sentences to specialize it to each department, such as by listing faculty he knew. Kevin Angstadt notes that teaching-focused and research-focused positions may merit different cover letter contents.
+
+
+
+I am writing to apply for an \fixme{Assistant Professor} position in the Department of \fixme{[XXX]} at the \fixme{[YYY]}.
+
+I am a postdoctoral researcher at the Max Planck Institute for Security and Privacy, where I conduct research on \textbf{software engineering}, focusing on \textbf{program analysis} and \textbf{software testing}. My goal is to achieve practical software testing in real-world scenarios by addressing the empirical challenges associated with the scale and complexity of software systems. \fixme{TODO: Research summary.}
+
+
+I am excited about the opportunity to join as an \fixme{Assistant Professor} at the \fixme{[YYY]}.
+% Reasons you are excited about the position can include the type of school (public vs. private, R1 vs. liberal arts), the location, specific initiatives or centers related to your research, and past collaborations you’ve had with faculty at the institution.
+\fixme{TODO: Sentences that are specific to University [YYY].}
+
+
+% To do so, I utilize statistical methods, such as causal inference, biostatistics, and machine learning, to analyze the dynamic behavior of software in operational environments. My research has been published in top-tier software engineering venues, including ICSE, FSE, and JSS, and I served as a program committee member for top-tier conferences, including FSE, ASE, and ISSTA.
+
+% I am currently a PhD Candidate in Computer Science at Michigan, where I research software engineering using programming languages techniques and human factors. My goal is to help programmers become more supported and productive, regardless of background. I am excited by the possibility of continuing my research as a professor at University X. Sentences that are specific to University X.
+
+% I am a postdoctoral research scientist at the University of Michigan, Ann Arbor. I am an interdisciplinary researcher combining systems security and dependable autonomous systems. Compromised computer sys- tems have led to disasters for companies and governments alike. More recently, advanced attackers have begun concealing malicious behavior as part of the ever-present security arms race. I believe that robust system design requires assuming an adversary will gain access to the system at some point. As a result, during my research career, I have (1) leveraged hardware support and Trusted Execution Environments (TEEs) to develop frameworks and techniques for robust and faithful system analyses to understand and defend against advanced evasive malware, (2) adapted these techniques to detect and remove vulnerabilities from intelligent autonomous systems and large-scale cloud infrastructure, and (3) used functional Magnetic Resonance Imaging (fMRI) to conduct studies of human subjects to understand cognition associated with developer decision-making. My work has been published in top-tier venues across several areas, including IEEE S&P, NDSS, DSN, ICSE, FSE, and EMNLP.
+
+
+\bigskip % Vertical whitespace
+
+Sincerely yours,
+
+\vspace{50pt} % Vertical whitespace
+
+Seongmin Lee
+
+\end{document}

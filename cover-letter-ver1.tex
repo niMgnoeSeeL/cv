@@ -35,6 +35,7 @@
 
 % fixme
 \newcommand{\fixme}[1]{\textcolor{red}{#1}}
+\newcommand{\done}[1]{\textcolor{black}{#1}}
  
 % Use the first page headers/footers style on the first page
 \AtBeginDocument{\thispagestyle{firstpage}}
@@ -42,32 +43,69 @@
 \pagestyle{subsequentpages}
 
 \newcommand{\setuniversity}[1]{%
-    \def\university{#1}%
-    \ifthenelse{\equal{#1}{Massachusetts Institute of Technology}}{%
-        \def\position{an Assistant Professor\xspace}%
-        \def\department{Department of Electrical Engineering and Computer Science (EECS)\xspace}%
-		\def\sentencespecific{
-			I am excited about the opportunity to join MIT, whose mission to advance knowledge through rigorous study, discovery, and innovation aligns with my vision. MIT’s dedication to intellectual curiosity and fostering an inclusive, interdisciplinary community resonates deeply with my goal of developing transformative software engineering methodologies to address global challenges.
+    \ifthenelse{\equal{#1}{MIT}}{%
+		\def\university{\done{the Massachusetts Institute of Technology (MIT)}\xspace}%
+		\def\universityfull{\done{the Massachusetts Institute of Technology}\xspace}%
+		\def\universityshort{\done{MIT}\xspace}%
+        \def\position{\done{an Assistant Professor}\xspace}%
+		\def\positionabst{\done{a faculty position}\xspace}%
+        \def\department{\done{Department of Electrical Engineering and Computer Science (EECS)}\xspace}%
+		\def\sentencespecific{\done{
+			I am excited about the opportunity to join MIT, whose mission to advance knowledge through rigorous study, discovery, and innovation aligns with my vision. MIT's dedication to intellectual curiosity and fostering an inclusive, interdisciplinary community resonates deeply with my goal of developing transformative software engineering methodologies to address global challenges.}
 		\xspace}%
-		\def\requirements{(1) cover letter, (2) curriculum vitae, (3) a research statement, and (4) a teaching statement}%
+		\def\requirements{\done{(1) cover letter, (2) curriculum vitae, (3) a research statement, and (4) a teaching statement}}%
     }{%
-    \ifthenelse{\equal{#1}{University B}}{%
-        \def\position{\fixme{Lecturer}\xspace}%
-        \def\department{\fixme{School of Software Engineering}\xspace}%
-		\def\sentencespecific{\fixme{TODO: Sentences that are specific to University.}\xspace}%
-		\def\requirements{\fixme{(1) CV, (2) research statement, (3) teaching statement, and (4) statement on diversity, equity, and inclusion}}%
+    \ifthenelse{\equal{#1}{Georgia Tech}}{%
+		\def\university{\done{the Georgia Institute of Technology}\space}%
+		\def\universityfull{\done{the Georgia Institute of Technology}\xspace}%
+		\def\universityshort{\done{Georgia Tech}\xspace}%
+        \def\position{\done{a tenure track Assistant Professor}\xspace}%
+		\def\positionabst{\done{a tenure-track faculty position}\xspace}%
+        \def\department{\done{School of Computer Science}\xspace}%
+		\def\sentencespecific{\done{ I am particularly inspired by Georgia Tech’s dedication to innovation and its ability to foster interdisciplinary collaboration across diverse perspectives, which aligns with my view of tackling the multifaceted challenges in modern software engineering. I am excited about the opportunity to join Georgia Tech, where the Institute's emphasis on excellence and inclusivity, combined with its top-ranked research environment, provides an ideal platform to advance transformative research and education.}\xspace}%
+		\def\requirements{\done{(1) cover letter, (2) curriculum vitae, (3) a statement of research interests, and (4) a teaching statement}}%
     }{%
+	\ifthenelse{\equal{#1}{UCLA}}{%
+		\def\university{\done{the University of California, Los Angeles (UCLA) Samueli School of Engineering}\xspace}%
+		\def\universityfull{\done{UCLA Samueli School of Engineering}\xspace}%
+		\def\universityshort{\done{UCLA}\xspace}%
+		\def\position{\done{a Tenure-track Assistant Professor}\xspace}%
+		\def\positionabst{\done{a tenure-track faculty position}\xspace}%
+		\def\department{\done{Computer Science Department}\xspace}%
+		\def\sentencespecific{\done{ I am particularly inspired by UCLA's commitment to fostering excellence and diversity, and its emphasis on interdisciplinary collaboration and innovation to address pressing societal challenges. UCLA's dedication to advancing knowledge for the betterment of global society resonates with my vision of developing transformative methodologies to ensure software correctness in modern software systems. The dynamic research environment and inclusive community at UCLA make it an ideal place to advance impactful research and mentor the next generation of computing leaders.}\xspace}%
+		\def\requirements{\done{(1) curriculum vitae, (2) cover letter, (3) a statement of research, (4) a statement of teaching, (5) a statement on contributions to equity, diversity, and inclusion (EDI) along with a reference check authorization release form}}%
+	}{%
+	\ifthenelse{\equal{#1}{Purdue}}{%
+		\def\university{\done{Purdue University}\xspace}%
+		\def\universityfull{\done{Purdue University}\xspace}%
+		\def\universityshort{\done{Purdue University}\xspace}%
+		\def\position{\done{a Tenure-track Assistant Professor}\xspace}%
+		\def\positionabst{\done{a tenure track faculty position}\xspace}%
+		\def\department{\done{Department of Computer Science}\xspace}%
+		\def\sentencespecific{\done{I am particularly drawn to Purdue’s vision of becoming the most consequential engineering college in the nation, with its commitment to fostering innovation, interdisciplinary collaboration, and impactful research. Purdue’s emphasis on excellence in education and its vibrant research environment align closely with my goal of developing transformative methodologies for modern software systems and mentoring the next generation of engineering leaders.}\xspace}%
+		\def\requirements{\done{(1) a complete curriculum vitae, (2) a statement of research, (3) a statement of teaching, and (4) names and contact details of three references}}%
+	}{%
+	\ifthenelse{\equal{#1}{UIUC}}{%
+		\def\university{\done{the University of Illinois at Urbana-Champaign (UIUC)}\xspace}%
+		\def\universityfull{\done{the University of Illinois at Urbana-Champaign}\xspace}%
+		\def\universityshort{\done{UIUC}\xspace}%
+		\def\position{\done{a Tenure-track Assistant Professor}\xspace}%
+		\def\positionabst{\done{a tenure-track faculty position}\xspace}%
+		\def\department{\done{Siebel School of Computing and Data Science}\xspace}%
+		\def\sentencespecific{\done{I am particularly inspired by the Grainger College of Engineering's vision to lead transformative innovation and tackle global challenges through interdisciplinary collaboration and impactful research. UIUC's commitment to excellence, inclusivity, and fostering bold ideas aligns closely with my goal of developing transformative methodologies to ensure software correctness in modern software systems, while mentoring the next generation of engineering leaders in a dynamic research environment.}\xspace}%
+		\def\requirements{\done{(1) a complete curriculum vitae, (2) a research statement, (3) a teaching statement, and (4) a statement on commitment to diversity, along with names and contact information of three references who will be contacted to provide letters}}%
+	}{%
 		\def\university{\fixme{University}\xspace}%
         \def\position{\fixme{Position}\xspace}%
         \def\department{\fixme{Department}\xspace}%
 		\def\sentencespecific{\fixme{TODO: Sentences that are specific to University.}\xspace}%
 		\def\requirements{\fixme{TODO:(1) CV, (2) research statement, (3) teaching statement, and (4) statement on diversity, equity, and inclusion}}%
-    }}%
+    }}}}}%
 }
 
 % Macro for each university
 \newcommand{\writeletter}{%
-I am writing to apply for \position position in the \department at the \university.
+I am writing to apply for \position position in the \department at \university.
 
 I am a postdoctoral researcher at the Max Planck Institute for Security and Privacy, where I conduct research on \textbf{software engineering}, focusing on \textbf{program analysis} and \textbf{software testing}. My goal is to develop scalable and reliable methodologies to ensure software correctness in complex and critical modern software systems. To achieve this, I employ interdisciplinary statistical techniques to analyze program behavior, enhancing the precision and robustness of analysis and testing.
 % I am excited about the opportunity to join as \position at the \university.
@@ -78,13 +116,13 @@ I am a postdoctoral researcher at the Max Planck Institute for Security and Priv
 2) Overcoming the limited scalability of conventional static analysis, I uncovered hidden dependencies between software components by establishing a novel dependency analysis framework based on counterfactual causal reasoning.
 My work has been published in top-tier venues, including ICSE, ESEC/FSE, and JSS, and is supported by a research grant from the German Research Foundation (DFG) under Germany's Excellence Strategy, amounting to approximately \euro136,000.
 
-If I were to join \university, I would continue advancing software engineering by integrating advanced statistical techniques into the field. My vision is to drive a paradigm shift by establishing a statistical foundation for software analysis, leveraging interdisciplinary methods to address challenges where conventional approaches fall short. I am confident in achieving this goal, particularly in an era of big data in software engineering, where overlooked statistical methods offer unique contributions, such as explainability and addressing data scarcity—needs that have become increasingly critical in areas less served by extensively studied ML-like techniques.
+If I were to join \universityfull, I would continue advancing software engineering by integrating advanced statistical techniques into the field. My vision is to drive a paradigm shift by establishing a statistical foundation for software analysis, leveraging interdisciplinary methods to address challenges where conventional approaches fall short. I am confident in achieving this goal, particularly in an era of big data in software engineering, where overlooked statistical methods offer unique contributions, such as explainability and addressing data scarcity—needs that have become increasingly critical in areas less served by extensively studied ML-like techniques.
 
 \noindent \textbf{Teaching and Research Mentoring:} I have served as a teaching assistant six times for four courses at the Korea Advanced Institute of Science and Technology (KAIST), spanning introductory computer science to advanced software engineering. In this role, I co-designed course materials, led weekly discussions, and graded assignments. As a research mentor, I have guided three undergraduate students and one Ph.D. student through projects that resulted in three peer-reviewed publications, including two first-authored by the students, at top-tier software engineering venues.
 
 \noindent \textbf{Service:} I am committed to contributing to both academia and institutional service. I have served as a program committee member for top-tier conferences, including FSE, ASE, and ISSTA, as well as a reviewer for leading journals such as TSE and TOSEM. Additionally, I serve as an Open Science Ambassador at the Max Planck Society, where I promote Open Science practices and provide valuable resources to colleagues. I am also a member of the Early Career Researcher Board at the Cyber Security in the Age of Large-Scale Adversaries (CASA) Graduate School, where I help organize activities and address priorities for early career researchers.
 
-Enclosed for your review are my \requirements. My achievements in research, mentorship, and collaboration demonstrate my readiness for a tenure-track faculty position. I am excited about the opportunity to continue my research and contribute to the academic community at \university. Thank you for considering my application.
+Enclosed for your review are my \requirements. My achievements in research, mentorship, and collaboration demonstrate my readiness for \positionabst. I am excited about the opportunity to continue my research and contribute to the academic community at \universityfull. Thank you for considering my application.
 }
 
 \begin{document}
@@ -118,7 +156,7 @@ Dear Faculty Hiring Committee,
 
 \bigskip
 
-\setuniversity{Massachusetts Institute of Technology}
+\setuniversity{UIUC}
 \writeletter
 
 \bigskip
